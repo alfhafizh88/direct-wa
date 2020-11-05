@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        Nomor Whatsapp <input type="text" id="myText" name="fname" placeholder="contoh: 6287794012345"><br>
+
+        <p>Klik tombol dibawah ini untuk mengirim pesan melalui Whatsapp dari nomor tersebut</p>
+
+        <button onclick="myFunction()">Chat Sekarang</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myText").value;
+          var str = "Hubungi kami";
+          var result = str.link("https://api.whatsapp.com/send?phone="+x);
+          document.getElementById("demo").innerHTML = result;
+        }
+        </script>
+
+        <h5><i>*) Harap klik tombol "Chat Sekarang" setelah mengisi ulang nomor whatsapp</i></h5>
+
+    </body>
+</html>
